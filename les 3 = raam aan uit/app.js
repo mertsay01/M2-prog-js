@@ -9,19 +9,6 @@ class App
         let title = document.getElementById("canvasId")
         let randomGetal = Math.random()
         console.log(randomGetal);
-        if (randomGetal == 0){
-            title.style.backgroundColor = "#ffff00"
-        } 
-        else if (randomGetal <= 0.2){
-            title.style.backgroundColor = "#ff8000"
-        }
-        else if (randomGetal <= 0.6){
-            title.style.backgroundColor = "#00bfff"
-        }
-        else if (randomGetal <= 1){
-            title.style.backgroundColor = "#0040ff"
-        }
-
 
         //dak
         g.beginPath()
@@ -54,7 +41,7 @@ class App
         g.fill()
         //zijkant huis klein
         g.beginPath()
-        g.fillStyle = "blue";
+        g.fillStyle = "grey";
         g.moveTo(600, 400);
         g.lineTo(600, 600);
         g.lineTo(800, 500);
@@ -64,16 +51,18 @@ class App
         g.fill()
         //raam 1
         g.beginPath()
-        g.fillStyle = "green";
-        g.moveTo(300, 400);
-        g.lineTo(300, 450);
-        g.lineTo(350, 450);
-        g.lineTo(350, 400);
-        g.closePath();
-        g.stroke();
-        g.fill()
-        g.beginPath()
-        g.fillStyle = "green";
+        if (randomGetal == 0){
+            g.fillStyle = "black"
+        } 
+        else if (randomGetal <= 0.2){
+            g.fillStyle = "yellow"
+        }
+        else if (randomGetal <= 0.6){
+            g.fillStyle = "black"
+        }
+        else if (randomGetal <= 1){
+            g.fillStyle = "yellow"
+        }
         g.moveTo(300, 400);
         g.lineTo(300, 450);
         g.lineTo(350, 450);

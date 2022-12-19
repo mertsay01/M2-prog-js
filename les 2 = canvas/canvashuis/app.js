@@ -38,7 +38,7 @@ class App
         g.fill()
         //zijkant huis klein
         g.beginPath()
-        g.fillStyle = "blue";
+        g.fillStyle = "grey";
         g.moveTo(600, 400);
         g.lineTo(600, 600);
         g.lineTo(800, 500);
